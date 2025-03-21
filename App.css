@@ -1,0 +1,26 @@
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: url("../src/assets/dark.jpg") center/cover no-repeat;
+    filter: blur(2.5px); 
+    z-index: -1; 
+  }
+
+  :root {
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: var(--body-font);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--heading-font);
+  }
+  
