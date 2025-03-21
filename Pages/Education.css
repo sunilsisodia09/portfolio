@@ -1,0 +1,115 @@
+
+.education-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  padding: 3rem 0;
+  border-radius: 12px;
+  box-shadow: 0px 5px 5px rgba(247, 248, 248, 0.4),
+  0px -5px 5px rgba(247, 248, 248, 0.4),
+  5px 0px 5px rgba(247, 248, 248, 0.4),
+  -5px 0px 5px rgba(247, 248, 248, 0.4);
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+  text-transform: uppercase;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 2rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  color: aliceblue;
+  padding: 1rem;
+}
+
+
+.education-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+}
+
+
+.edu-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  margin-bottom: 1rem;
+}
+
+
+.edu-details h3 {
+  font-size: 1.3rem;
+  color: #38bdf8;
+}
+
+.edu-details p,
+.edu-details span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-section {
+    width: 95%;
+    padding: 2rem 0;
+  }
+
+  .education-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .education-grid {
+    display: flex;
+    flex-direction: column; /* Ensure cards appear one below the other */
+    align-items: center; /* Center the cards */
+    gap: 3rem;
+    padding: 0.5rem;
+  }
+
+  .education-card {
+    width: 80%; /* Make cards take most of the screen width */
+    max-width: 400px; /* Prevent cards from being too wide */
+    padding: 1.5rem;
+  }
+
+  .edu-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .edu-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .edu-details p,
+  .edu-details span {
+    font-size: 0.9rem;
+  }
+}
+
+
